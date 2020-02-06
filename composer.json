@@ -1,0 +1,31 @@
+{
+    "name": "kfoobar/laravel-meta",
+    "description": "Laravel package to manage title and meta tags",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "KFoobar",
+            "email": "david@kfoobar.se"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "^5.5|^6"
+    },
+    "autoload": {
+        "psr-4": {
+            "KFoobar\\LaravelMeta\\": "src/KFoobar/LaravelMeta/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KFoobar\\LaravelMeta\\MetaServiceProvider"
+            ],
+            "aliases": {
+                "Meta": "KFoobar\\LaravelMeta\\Facades\\Meta"
+            }
+        }
+    }
+}
